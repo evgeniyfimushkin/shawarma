@@ -1,5 +1,6 @@
 package edu.evgen.shawarma.entities;
 
+import jakarta.persistence.*;
 import jakarta.validation.constraints.Digits;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotEmpty;
@@ -7,16 +8,20 @@ import jakarta.validation.constraints.Pattern;
 import lombok.Data;
 import org.hibernate.validator.constraints.CreditCardNumber;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 @Data
-public class ShawarmaOrder {
+@Entity
+public class ShawarmaOrder implements Serializable {
 
     private static final long serialVersionUID = 1L;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private Date placedAt;
+    private Date placedAt = new Date();
 
     @NotBlank(message = "Необходимо ввести имя")
     private String deliveryName;
@@ -30,6 +35,7 @@ public class ShawarmaOrder {
     @Digits(integer = 3,fraction = 0,message = "Неверны код")
     private String ccCVV;
     @NotEmpty(message = "Корзина пуста")
+    @OneToMany(cascade = CascadeType.ALL)// При удалении заказа, все shawarmas тоже будут удалены
     private List<Shawarma> shawarmas = new ArrayList<>();
 
     public void addShawarma(Shawarma shawarma) {

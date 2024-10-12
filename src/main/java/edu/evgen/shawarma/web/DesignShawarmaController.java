@@ -4,7 +4,7 @@ package edu.evgen.shawarma.web;
 import edu.evgen.shawarma.entities.Ingredient;
 import edu.evgen.shawarma.entities.Shawarma;
 import edu.evgen.shawarma.entities.ShawarmaOrder;
-import edu.evgen.shawarma.repositories.IngredientRepository;
+import edu.evgen.shawarma.data.IngredientRepository;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +14,7 @@ import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.*;
 import edu.evgen.shawarma.entities.Ingredient.Type;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -48,12 +49,12 @@ public class DesignShawarmaController {
 
     @ModelAttribute
     public void addIngredientsToModel(Model model) {
-        List<Ingredient> ingredients = ingredientRepo.findAll();
+        List<Ingredient> ingredients = new ArrayList<>();
+        ingredientRepo.findAll().forEach(i -> ingredients.add(i));
         Type[] types = Ingredient.Type.values();
         for (Type type : types) {
             model.addAttribute(type.toString().toLowerCase(),
                     filterByType(ingredients, type));
-
         }
     }
 

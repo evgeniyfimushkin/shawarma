@@ -1,2 +1,2 @@
 # shawarma
-## Education Sprigng application
+## Education Java Spring application for ordering shawarma

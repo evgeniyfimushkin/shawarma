@@ -1,9 +1,12 @@
 package edu.evgen.shawarma.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
 
 import java.util.Date;
 import java.util.List;
@@ -22,6 +25,13 @@ public class Shawarma {
     @Size(min = 1, message = "Необходимо выбрать хотя бы один ингредиент")
     @ManyToMany() // объявление взаимосвязи между Shawarma и ingredients
     private List<Ingredient> ingredients;
+
+    @ToString.Exclude
+    @EqualsAndHashCode.Exclude
+    @ManyToOne
+    @JsonIgnore
+    @JoinColumn(name = "order_id_id")
+    private ShawarmaOrder order;
     public void addIngredient(Ingredient ingredient){
         ingredients.add(ingredient);
     }

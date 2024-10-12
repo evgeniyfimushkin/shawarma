@@ -34,11 +34,13 @@ public class ShawarmaOrder implements Serializable {
     private String ccExpiration;
     @Digits(integer = 3,fraction = 0,message = "Неверны код")
     private String ccCVV;
+
     @NotEmpty(message = "Корзина пуста")
-    @OneToMany(cascade = CascadeType.ALL)// При удалении заказа, все shawarmas тоже будут удалены
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "id")// При удалении заказа, все shawarmas тоже будут удалены
     private List<Shawarma> shawarmas = new ArrayList<>();
 
     public void addShawarma(Shawarma shawarma) {
         this.shawarmas.add(shawarma);
+        shawarma.setOrder(this);
     }
 }

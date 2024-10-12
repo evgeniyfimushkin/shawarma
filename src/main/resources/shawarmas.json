@@ -1,0 +1,174 @@
+[
+  {
+    "id": 1,
+    "placedAt": "2024-10-12T05:13:07.423+00:00",
+    "deliveryName": "Антонов Станислов Павлович",
+    "deliveryStreet": "г. Барнаул, ул. Павлинского, д. 3, кв. 46",
+    "ccNumber": "4111111111111111",
+    "ccExpiration": "12.12.2024",
+    "ccCVV": "930",
+    "shawarmas": [
+      {
+        "id": 1,
+        "createdAt": "2024-10-12T05:13:21.388+00:00",
+        "name": "Женя",
+        "ingredients": [
+          {
+            "id": "PORK",
+            "name": "Свинина",
+            "type": "PROTEIN"
+          },
+          {
+            "id": "VITZ",
+            "name": "Сыр Витязь",
+            "type": "CHEESE"
+          },
+          {
+            "id": "TMTO",
+            "name": "Помидоры",
+            "type": "VEGGIES"
+          },
+          {
+            "id": "CUCM",
+            "name": "Огурцы",
+            "type": "VEGGIES"
+          },
+          {
+            "id": "GARL",
+            "name": "Чесночный",
+            "type": "SAUCE"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "placedAt": "2024-10-12T05:15:03.614+00:00",
+    "deliveryName": "Антон Павлович Чехов",
+    "deliveryStreet": "г. Новосибирск, ул. Котовского 17/1, кв. 6",
+    "ccNumber": "4111111111111111",
+    "ccExpiration": "10.12.2024",
+    "ccCVV": "905",
+    "shawarmas": [
+      {
+        "id": 2,
+        "createdAt": "2024-10-12T05:13:34.370+00:00",
+        "name": "Андрюха",
+        "ingredients": [
+          {
+            "id": "PORK",
+            "name": "Свинина",
+            "type": "PROTEIN"
+          },
+          {
+            "id": "POTA",
+            "name": "Картошка",
+            "type": "VEGGIES"
+          },
+          {
+            "id": "TMTO",
+            "name": "Помидоры",
+            "type": "VEGGIES"
+          },
+          {
+            "id": "CUCM",
+            "name": "Огурцы",
+            "type": "VEGGIES"
+          },
+          {
+            "id": "CHES",
+            "name": "Сырный",
+            "type": "SAUCE"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "placedAt": "2024-10-12T13:19:33.866+00:00",
+    "deliveryName": "фифываыфва",
+    "deliveryStreet": "ыфваывфа",
+    "ccNumber": "4111111111111111",
+    "ccExpiration": "12.12.1221",
+    "ccCVV": "123",
+    "shawarmas": [
+      {
+        "id": 52,
+        "createdAt": "2024-10-12T05:15:14.416+00:00",
+        "name": "Веганская",
+        "ingredients": [
+          {
+            "id": "VITZ",
+            "name": "Сыр Витязь",
+            "type": "CHEESE"
+          },
+          {
+            "id": "POTA",
+            "name": "Картошка",
+            "type": "VEGGIES"
+          },
+          {
+            "id": "TMTO",
+            "name": "Помидоры",
+            "type": "VEGGIES"
+          },
+          {
+            "id": "CUCM",
+            "name": "Огурцы",
+            "type": "VEGGIES"
+          },
+          {
+            "id": "GARL",
+            "name": "Чесночный",
+            "type": "SAUCE"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 152,
+    "placedAt": "2024-10-12T13:34:44.503+00:00",
+    "deliveryName": "sadf",
+    "deliveryStreet": "sadf",
+    "ccNumber": "4111111111111111",
+    "ccExpiration": "12.12.1212",
+    "ccCVV": "123",
+    "shawarmas": []
+  },
+  {
+    "id": 202,
+    "placedAt": "2024-10-12T13:37:06.510+00:00",
+    "deliveryName": "ывфаыфваыфваыв",
+    "deliveryStreet": "ыфваыфвафы",
+    "ccNumber": "4111111111111111",
+    "ccExpiration": "12.12.1212",
+    "ccCVV": "123",
+    "shawarmas": [
+      {
+        "id": 202,
+        "createdAt": "2024-10-12T13:34:50.824+00:00",
+        "name": "asd",
+        "ingredients": [
+          {
+            "id": "POTA",
+            "name": "Картошка",
+            "type": "VEGGIES"
+          },
+          {
+            "id": "TMTO",
+            "name": "Помидоры",
+            "type": "VEGGIES"
+          },
+          {
+            "id": "CUCM",
+            "name": "Огурцы",
+            "type": "VEGGIES"
+          }
+        ]
+      }
+    ]
+  }
+]

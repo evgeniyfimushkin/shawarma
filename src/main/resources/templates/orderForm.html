@@ -20,6 +20,7 @@
           th:errors="*{shawarmas}">CC Num Error</span>
 
     <br>
+
     <a th:href="@{/design}" id="another">Добавить шаурму</a><br>
     <ul th:if="${#lists.size(shawarmaOrder.shawarmas) > 0}">
         <li th:each="shawarma: ${shawarmaOrder.shawarmas}">

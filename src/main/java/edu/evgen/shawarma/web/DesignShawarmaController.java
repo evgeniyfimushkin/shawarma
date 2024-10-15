@@ -51,6 +51,7 @@ public class DesignShawarmaController {
     public void addIngredientsToModel(Model model) {
         List<Ingredient> ingredients = new ArrayList<>();
         ingredientRepo.findAll().forEach(i -> ingredients.add(i));
+//        ingredients.add(ingredientRepo.findById("GOLN").get());
         Type[] types = Ingredient.Type.values();
         for (Type type : types) {
             model.addAttribute(type.toString().toLowerCase(),

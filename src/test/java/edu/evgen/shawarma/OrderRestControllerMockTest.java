@@ -11,11 +11,8 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -26,19 +23,14 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-@SpringBootTest
-@Transactional
-public class OrderRestControllerTest {
-//    @Mock
-//    private OrderRepository orderRepository;
-//    @InjectMocks
-
-    @Autowired
+@ExtendWith(MockitoExtension.class)
+public class OrderRestControllerMockTest {
+    @Mock
+    private OrderRepository orderRepository;
+    @InjectMocks
     private OrderRestController orderRestController;
     private List<ShawarmaOrder> testListOrders;
-
-//    @Autowired
-    MockMvc mockMvc;
+    private MockMvc mockMvc;
 
     @BeforeEach
     void setUp() {
@@ -49,19 +41,13 @@ public class OrderRestControllerTest {
     @Test
     public void testGetOrders() throws Exception {
 
-//        when(orderRepository.findAll()).thenReturn(testListOrders);
-        assert !mockMvc.perform(get("/api/orders"))
-                .andReturn()
-                .getResponse()
-                .getContentAsString()
-                .isBlank();
-//                .equals("");
-//                .andExpect(status().isOk())
-//
-//                .andExpect(jsonPath("$[0].deliveryName").value("Evgen"))
-//                .andExpect(jsonPath("$[0].deliveryStreet").value("Lenina10"))
-//                .andExpect(jsonPath("$[0].shawarmas[0].name").value("ShawarmaTest"))
-//                .andExpect(jsonPath("$[0].shawarmas[0].ingredients[0].name").value("TEST"));
+        when(orderRepository.findAll()).thenReturn(testListOrders);
+        mockMvc.perform(get("/api/orders"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$[0].deliveryName").value("Evgen"))
+                .andExpect(jsonPath("$[0].deliveryStreet").value("Lenina10"))
+                .andExpect(jsonPath("$[0].shawarmas[0].name").value("ShawarmaTest"))
+                .andExpect(jsonPath("$[0].shawarmas[0].ingredients[0].name").value("TEST"));
     }
     @Test
     public void testPostOrders() throws Exception{

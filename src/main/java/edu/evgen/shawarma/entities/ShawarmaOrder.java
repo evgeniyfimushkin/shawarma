@@ -1,28 +1,27 @@
 package edu.evgen.shawarma.entities;
 
+import jakarta.persistence.*;
 import jakarta.validation.constraints.Digits;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Pattern;
 import lombok.Data;
 import org.hibernate.validator.constraints.CreditCardNumber;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.UUID;
 
 @Data
-@Document
+@Entity
 public class ShawarmaOrder implements Serializable {
 
     // Уникальный идентификатор версии для совместимости сериализации
     private static final long serialVersionUID = 1L;
     @Id
-    private String id;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
 
     private Date placedAt = new Date();
 
@@ -43,9 +42,11 @@ public class ShawarmaOrder implements Serializable {
     private String ccCVV;
 
     @NotEmpty(message = "Корзина пуста")
+    @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
     private List<Shawarma> shawarmas = new ArrayList<>();
 
     public void addShawarma(Shawarma shawarma) {
+        shawarma.setOrder(this);
         this.shawarmas.add(shawarma);
     }
 }

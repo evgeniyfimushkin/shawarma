@@ -2,19 +2,24 @@ logging:
   level:
     org:
       springframework:
-        data:
-          mongodb: DEBUG
-      mongodb:
-        driver: DEBUG
+        web: debug
+
+
 spring:
+  main:
+    debug: true
   application:
     name: shawarma
   thymeleaf:
     cache: true
-  data:
-    mongodb:
-      host: localhost
-      port: 27017
-      username: admin
-      password: admin
-      database: admin
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:h2:file:./data/ShawarmaDB
+    driver-class-name: org.h2.Driver
+    generate-unique-name: false
+    name: shawarma
+    username: sa
+    password:
+    initialization-mode: always

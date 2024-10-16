@@ -1,13 +1,14 @@
 package edu.evgen.shawarma.entities;
 
-import lombok.*;
-import org.springframework.data.annotation.Id;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import lombok.AccessLevel;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.PersistenceConstructor;
-import org.springframework.data.mongodb.core.mapping.Document;
 
 @Data
-@Document
-//@AllArgsConstructor
+@Entity
 @NoArgsConstructor(access= AccessLevel.PRIVATE, force = true)
 public class Ingredient{
     @Id

@@ -77,7 +77,6 @@ public class OrderRestControllerTest {
         order.setCcCVV("123");
         Shawarma shawarma = new Shawarma();
         shawarma.setCreatedAt(new Date());
-        shawarma.setOrder(order);
         shawarma.setName("ShawarmaTest");
         List<Ingredient> ingredients = new ArrayList<>();
         ingredients.add(new Ingredient("TEST", "TEST", Ingredient.Type.PROTEIN));

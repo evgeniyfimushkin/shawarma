@@ -1,6 +1,7 @@
 package edu.evgen.shawarma.entities;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -25,10 +26,15 @@ public class User implements UserDetails {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
+
     private final String username;
+
     private final String password;
+
     private final String fullname;
+
     private final String street;
+
     private final String phoneNumber;
 
     @Override

@@ -5,6 +5,8 @@ import edu.evgen.shawarma.data.OrderRepository;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -32,10 +34,17 @@ public class OrderController {
     }
 
     @PostMapping
-    public String processOrder(@Valid ShawarmaOrder shawarmaOrder, Errors errors, SessionStatus sessionStatus) {
+    public String processOrder(
+            @Valid ShawarmaOrder shawarmaOrder,
+            Errors errors,
+            SessionStatus sessionStatus,
+            @AuthenticationPrincipal UserDetails userDetails
+    ) {
         if (errors.hasErrors()) {
             return "orderForm";
         }
+        if(userDetails.getUsername()!=null)
+            shawarmaOrder.setUsername(userDetails.getUsername());
         orderRepo.save(shawarmaOrder);
         sessionStatus.setComplete();
 

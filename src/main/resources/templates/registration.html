@@ -15,33 +15,46 @@
 
 
 
-<form method = "POST" th:action="@{/register}" id = "registerForm">
-
-    <div th:if="${userExists}" style = "color: red;">
-        Пользователь с таким именем уже существует. Пожалуйста, выберите другое имя.
-    </div>
+<form method="POST" th:action="@{/register}" th:object="${registrationForm}" id="registerForm">
 
     <label for="username">Логин:</label>
-    <input type = "text" name = "username"/><br>
+    <input type="text" th:field="*{username}"/><br>
+    <div th:if="${#fields.hasErrors('username')}" style="color: red;">
+        <p th:errors="*{username}">Поле логин обязательно</p>
+    </div>
+    <div th:if="${userExists}" style="color: red;">
+        Пользователь с таким логином уже существует. Пожалуйста, выберите другой логин.
+    </div>
+
 
     <label for="password">Пароль:</label>
-    <input type = "password" name = "password"/><br>
+    <input type="password" th:field="*{password}"/><br>
+    <div th:if="${#fields.hasErrors('password')}" style="color: red;">
+        <p th:errors="*{password}">Поле пароль обязательно</p>
+    </div>
+    <div th:if="${wrongPassword}" style="color: red;">
+        Пароли не совпадают
+    </div>
 
     <label for="confirm">Повтор пароля:</label>
-    <input type = "password" name = "confirm"/><br>
+    <input type="password" th:field="*{confirm}"/><br>
+    <div th:if="${#fields.hasErrors('confirm')}" style="color: red;">
+        <p th:errors="*{confirm}">Поле пароль обязательно</p>
+    </div>
 
     <label for="fullname">ФИО:</label>
-    <input type = "text" name = "fullname"/><br>
+    <input type="text" th:field="*{fullname}"/><br>
 
     <label for="street">Адрес:</label>
-    <input type = "text" name = "street"/><br>
+    <input type="text" th:field="*{street}"/><br>
 
     <label for="phone">Телефон:</label>
-    <input type = "text" name = "phone"/><br>
+    <input type="text" th:field="*{phone}"/><br>
 
-    <input type = "submit" value="Register"/>
+    <input type="submit" value="Register"/>
 
 </form>
+
 
 </body>
 </html>

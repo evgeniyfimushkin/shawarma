@@ -1,0 +1,6 @@
+2024-10-16 13:59:42.317282+07:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "APP_USER" not found; SQL statement:
+drop table APP_USER [42102-224]
+2024-10-16 14:00:15.181063+07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "APP_USER" not found; SQL statement:
+select u1_0.id,u1_0.fullname,u1_0.password,u1_0.phone_number,u1_0.street,u1_0.username from app_user u1_0 where u1_0.username=? [42102-224]

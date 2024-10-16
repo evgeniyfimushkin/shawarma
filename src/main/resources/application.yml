@@ -1,13 +1,13 @@
-logging:
-  level:
-    org:
-      springframework:
-        web: debug
+#logging:
+#  level:
+#    org:
+#      springframework:
+#        web: debug
 
 
 spring:
-  main:
-    debug: true
+#  main:
+#    debug: true
   application:
     name: shawarma
   thymeleaf:

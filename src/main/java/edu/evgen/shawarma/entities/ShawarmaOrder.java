@@ -45,6 +45,9 @@ public class ShawarmaOrder implements Serializable {
     @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
     private List<Shawarma> shawarmas = new ArrayList<>();
 
+
+    private String username; // Поле для хранения имени пользователя
+
     public void addShawarma(Shawarma shawarma) {
         shawarma.setOrder(this);
         this.shawarmas.add(shawarma);

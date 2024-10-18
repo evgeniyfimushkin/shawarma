@@ -51,9 +51,12 @@
     <label for="phone">Телефон:</label>
     <input type="text" th:field="*{phone}"/><br>
 
-    <input type="submit" value="Register"/>
+    <input type="submit" value="Register"/><br>
+
+    <a id="google-login" th:href="@{/oauth2/authorization/google}"> Войти, через Google аккаунт</a>
 
 </form>
+
 
 
 </body>

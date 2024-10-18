@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Шаурма</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+
+<h1>Вход</h1>
+
+<img width="25%" th:src="@{/images/shawarma.png}"/>
+
+
+<form method="post" th:action="@{/login}" id="loginForm">
+    <label for="username">Логин:</label>
+    <input type="text" name="username" id="username"/>
+    <br>
+
+    <label type="password">Пароль</label>
+    <input type="password" name="password" id="password"/><br>
+
+    <input type="submit" value="Login"/><br>
+
+
+    <a id="google-login" th:href="@{/oauth2/authorization/google}"> Войти, через Google аккаунт</a>
+
+</form>
+
+
+</body>
+</html>

@@ -6,8 +6,8 @@
 
 
 spring:
-#  main:
-#    debug: true
+  #  main:
+  #    debug: true
   application:
     name: shawarma
   thymeleaf:
@@ -23,3 +23,11 @@ spring:
     username: sa
     password:
     initialization-mode: always
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            clientId: ${google.clientId}
+            clientSecret: ${google.clientSecret}
+            scope: profile, email

@@ -132,3 +132,34 @@ button:hover, input[type="submit"]:hover {
 button:active, input[type="submit"]:active {
     background-color: #d94d3a;  /* Ещё темнее при клике */
 }
+
+
+a#google-login {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    background-color: white;
+    color: #4285F4;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #4285F4;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+a#google-login:hover {
+    background-color: #4285F4;
+    color: white;
+}
+
+a#google-login:before {
+    content: url('https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg');
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+}

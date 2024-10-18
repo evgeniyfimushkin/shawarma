@@ -4,16 +4,25 @@ import edu.evgen.shawarma.data.UserRepository;
 import edu.evgen.shawarma.entities.User;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.authorization.AuthenticatedAuthorizationManager;
 import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.oauth2.client.userinfo.OAuth2UserRequest;
+import org.springframework.security.oauth2.client.userinfo.OAuth2UserService;
+import org.springframework.security.oauth2.core.user.OAuth2User;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
+
+import java.util.HashSet;
+import java.util.Set;
 
 @Configuration
 @EnableWebSecurity
@@ -34,38 +43,45 @@ public class SecurityConfig {
     }
 
     @Bean
-    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+    public SecurityFilterChain filterChain(HttpSecurity http,CustomOAuth2UserService customOAuth2UserService) throws Exception {
 
         http
-                .csrf(csrf->csrf.disable())
+                .csrf(csrf -> csrf.disable())
                 .headers(
-                        headers->headers
-                        .frameOptions(frameOptionsConfig -> frameOptionsConfig.disable())
+                        headers -> headers
+                                .frameOptions(frameOptionsConfig -> frameOptionsConfig.disable())
                 )
                 .authorizeHttpRequests(authorizeHttpRequests ->
-                        authorizeHttpRequests
-                                .requestMatchers("/h2-console/**").hasRole("USER")
-                                .requestMatchers("/design", "/order").hasRole("USER")
-                                .requestMatchers("/", "/**").permitAll()
+                                authorizeHttpRequests
+                                        .requestMatchers("/h2-console/**").hasRole("USER")
+                                        .requestMatchers("/design", "/order").hasRole("USER")
+//                                .requestMatchers("/design", "/order").rememberMe()
+                                        .requestMatchers("/", "/**").permitAll()
                 )
-                .formLogin(Customizer.withDefaults());
+                .formLogin(formLogin ->
+                        formLogin
+                                .loginPage("/login")
+                                .permitAll()
+                )
+                .oauth2Login(oauth2Login ->
+                        oauth2Login
+                                .loginPage("/login")
+                                .userInfoEndpoint(userInfoEndpoint ->
+                                        userInfoEndpoint
+                                                .userService(customOAuth2UserService)
+                                                .userAuthoritiesMapper(authorities -> {
+                                                    Set<GrantedAuthority> mappedAuthorities =
+                                                            new HashSet<>(authorities);
+                                                    mappedAuthorities.add(new SimpleGrantedAuthority("ROLE_USER"));
+                                                    return mappedAuthorities;
+                                                })))
+                .logout(logout ->
+                        logout
+                                .logoutSuccessUrl("/")
+                )
+                .rememberMe(Customizer.withDefaults());
         return http.build();
-//
-//        return http
-//                .authorizeHttpRequests()
-//                .requestMatchers("/design","/order").hasRole("USER")
-//                .requestMatchers("/","/**").permitAll()
-//                .and().build();
 
     }
-//    @Bean
-//    public SecurityFilterChain configure(HttpSecurity http) throws Exception {
-//        return http
-//                .csrf().disable() // Отключите CSRF для H2 Console
-//                .authorizeRequests()
-//                .requestMatchers("/h2-console/**").permitAll() // Разрешите доступ к H2 Console
-//                .anyRequest().authenticated() // Для остальных URL требуется аутентификация
-//                .and()
-//                .headers().frameOptions().sameOrigin().and().build(); // Разрешите фреймы для H2 Console
-//    }
+
 }

@@ -32,7 +32,10 @@ public class CustomOAuth2UserService implements OAuth2UserService<OAuth2UserRequ
                     "",
                     ""
             );
+            user.setEmail(oAuth2User.getAttribute("email"));
             userRepository.save(user);
+        }else{
+            user.setEmail(oAuth2User.getAttribute("email"));
         }
         return oAuth2User;
     }

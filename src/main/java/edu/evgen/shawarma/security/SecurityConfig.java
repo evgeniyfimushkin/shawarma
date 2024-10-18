@@ -34,7 +34,9 @@ public class SecurityConfig {
 
 
     @Bean
-    public UserDetailsService userDetailsService(UserRepository userRepo) {
+    public UserDetailsService userDetailsService(
+            UserRepository userRepo
+    ) {
         return username -> {
             User user = userRepo.findByUsername(username);
             if (user != null) return user;
@@ -43,7 +45,10 @@ public class SecurityConfig {
     }
 
     @Bean
-    public SecurityFilterChain filterChain(HttpSecurity http,CustomOAuth2UserService customOAuth2UserService) throws Exception {
+    public SecurityFilterChain filterChain(
+            HttpSecurity http,
+            CustomOAuth2UserService customOAuth2UserService
+    ) throws Exception {
 
         http
                 .csrf(csrf -> csrf.disable())

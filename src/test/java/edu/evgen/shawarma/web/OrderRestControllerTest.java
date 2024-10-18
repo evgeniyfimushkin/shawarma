@@ -1,10 +1,7 @@
-package edu.evgen.shawarma;
+package edu.evgen.shawarma.web;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import edu.evgen.shawarma.data.OrderRepository;
-import edu.evgen.shawarma.entities.Ingredient;
-import edu.evgen.shawarma.entities.Shawarma;
-import edu.evgen.shawarma.entities.ShawarmaOrder;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
@@ -13,10 +10,6 @@ import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMock
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
-
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
@@ -27,9 +20,13 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @AutoConfigureMockMvc
 @RequiredArgsConstructor
 public class OrderRestControllerTest {
-    private MockMvc mockMvc;
-    private ObjectMapper objectMapper;
-    private OrderRepository orderRepository;
+
+    @Autowired
+    MockMvc mockMvc;
+
+    ObjectMapper objectMapper;
+
+    OrderRepository orderRepository;
 
 //    @Test
 //    public void testCreateOrder() throws Exception {

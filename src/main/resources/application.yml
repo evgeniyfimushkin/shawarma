@@ -15,3 +15,10 @@ spring:
     username: sa
     password:
     initialization-mode: always
+
+feign.client.config.order.loggerLevel: full
+
+logging.level:
+  org.springframework.web: DEBUG
+  feign: DEBUG
+  edu: TRACE

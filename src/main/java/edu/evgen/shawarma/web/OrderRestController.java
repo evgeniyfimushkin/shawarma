@@ -24,15 +24,13 @@ public class OrderRestController {
 
     @GetMapping("/api/orders")
     List<ShawarmaOrder> getOrders() {
+        log.debug("getOrders <-");
         return StreamSupport.stream(orderRepository.findAll().spliterator(), false)
                 .toList();
     }
 
     @PostMapping("/api/orders")
-    public void newOrder(@RequestBody @Valid ShawarmaOrder order, Errors errors) {
-        if (errors.hasErrors()) {
-            throw new IllegalArgumentException("Invalid order data: " + errors.getAllErrors());
-        }
+    public void newOrder(@RequestBody @Valid ShawarmaOrder order) {
         log.info("Received new order: {}", order);
         order.getShawarmas().forEach(s -> s.setOrder(order));
         orderRepository.save(order);

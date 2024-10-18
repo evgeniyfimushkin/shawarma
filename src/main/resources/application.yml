@@ -28,6 +28,6 @@ spring:
       client:
         registration:
           google:
-            clientId: ${google.clientId}
-            clientSecret: ${google.clientSecret}
+            clientId: ${google.clientId} # create your own Google Cloud Oauth2 clientId
+            clientSecret: ${google.clientSecret} # create your own Google Cloud Oauth2 clientSecret
             scope: profile, email

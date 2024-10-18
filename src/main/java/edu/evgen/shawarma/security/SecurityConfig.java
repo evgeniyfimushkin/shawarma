@@ -58,6 +58,7 @@ public class SecurityConfig {
                 )
                 .authorizeHttpRequests(authorizeHttpRequests ->
                                 authorizeHttpRequests
+                                        .requestMatchers("/admin/**").hasRole("ADMIN")
                                         .requestMatchers("/h2-console/**").hasRole("USER")
                                         .requestMatchers("/design", "/order").hasRole("USER")
 //                                .requestMatchers("/design", "/order").rememberMe()

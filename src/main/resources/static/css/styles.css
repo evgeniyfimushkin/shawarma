@@ -163,3 +163,26 @@ a#google-login:before {
     width: 20px;
     height: 20px;
 }
+/* Стили для ссылки как кнопки */
+a#register {
+    display: inline-block;  /* Делаем ссылку блочным элементом */
+    margin-top: 15px;  /* Отступ сверху */
+    text-decoration: none;  /* Убираем подчеркивание */
+    background-color: #ff6f61;  /* Красно-оранжевый цвет фона */
+    color: white;  /* Белый текст */
+    padding: 10px 20px;  /* Просторная кнопка */
+    border-radius: 5px;  /* Скруглённые углы */
+    cursor: pointer;  /* Курсор в виде руки */
+    font-size: 16px;  /* Увеличенный текст */
+    font-weight: bold; /* Жирный текст */
+    transition: background-color 0.3s ease; /* Плавное изменение цвета */
+}
+
+/* Анимация при наведении */
+a#register:hover {
+    background-color: #ff5030;  /* Темнее при наведении */
+}
+
+a#register:active {
+    background-color: #d94d3a;  /* Ещё темнее при клике */
+}

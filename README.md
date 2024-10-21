@@ -3,11 +3,12 @@
 # Run locally
 ### Using gradlew
 1. Install jdk 21
-2. Execute
+2. Generate your own Google Cloud Oauth2 clientID and clientSecret keys and add them to application.yml for working Google Authorization
+3. Execute
 ```shell
 ./gradlew bootRun
 ```
-3. Open http://localhost:8080
+4. Open http://localhost:8080
 
 # Preview
 

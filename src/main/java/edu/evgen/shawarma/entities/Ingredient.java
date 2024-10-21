@@ -6,6 +6,7 @@ import lombok.AccessLevel;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.PersistenceConstructor;
+import org.springframework.data.annotation.PersistenceCreator;
 
 @Data
 @Entity
@@ -15,7 +16,7 @@ public class Ingredient{
     private final String id;
     private final String name;
     private final Type type;
-    @PersistenceConstructor
+    @PersistenceCreator
     public Ingredient(String id, String name, Type type) {
         this.id = id;
         this.name = name;

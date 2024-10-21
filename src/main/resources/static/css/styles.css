@@ -156,7 +156,7 @@ a#google-login:hover {
 }
 
 a#google-login:before {
-    content: url('https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg');
+
     display: inline-block;
     vertical-align: middle;
     margin-right: 8px;

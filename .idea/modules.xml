@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shawarmas.iml" filepath="$PROJECT_DIR$/.idea/modules/shawarmas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shawarma/shawarmas.shawarma.iml" filepath="$PROJECT_DIR$/.idea/modules/shawarma/shawarmas.shawarma.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shawarma/shawarmas.shawarma.main.iml" filepath="$PROJECT_DIR$/.idea/modules/shawarma/shawarmas.shawarma.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shawarma/shawarmas.shawarma.test.iml" filepath="$PROJECT_DIR$/.idea/modules/shawarma/shawarmas.shawarma.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shawarmaOAuth2AuthorizationServer/shawarmas.shawarmaOAuth2AuthorizationServer.iml" filepath="$PROJECT_DIR$/.idea/modules/shawarmaOAuth2AuthorizationServer/shawarmas.shawarmaOAuth2AuthorizationServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shawarmaOAuth2AuthorizationServer/shawarmas.shawarmaOAuth2AuthorizationServer.main.iml" filepath="$PROJECT_DIR$/.idea/modules/shawarmaOAuth2AuthorizationServer/shawarmas.shawarmaOAuth2AuthorizationServer.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shawarmaOAuth2AuthorizationServer/shawarmas.shawarmaOAuth2AuthorizationServer.test.iml" filepath="$PROJECT_DIR$/.idea/modules/shawarmaOAuth2AuthorizationServer/shawarmas.shawarmaOAuth2AuthorizationServer.test.iml" />
+    </modules>
+  </component>
+</project>

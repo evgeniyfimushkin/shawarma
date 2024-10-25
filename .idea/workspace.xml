@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="73e159e6-81d7-45b8-80d8-ca229618079e" name="Changes" comment="styles and html changes">
+      <change afterPath="$PROJECT_DIR$/shawarma/images/login.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/Colors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/IngredientByIdConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/OrderAdminService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/ShawarmaApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/entities/Ingredient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/entities/Shawarma.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/entities/ShawarmaOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/entities/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/restcontroller/IngredientController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/restcontroller/ShawarmaRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/security/CustomOAuth2UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/security/RegistrationForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/security/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/web/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/web/DesignShawarmaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/web/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/web/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/web/RegistrationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/web/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shawarma/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shawarma/src/main/resources/shawarmas.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shawarma/src/main/resources/static/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shawarma/src/main/resources/static/images/dbDiagram.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shawarma/src/main/resources/static/images/shawarma.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shawarma/src/main/resources/templates/design.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shawarma/src/main/resources/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shawarma/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shawarma/src/main/resources/templates/orderForm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shawarma/src/main/resources/templates/registration.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shawarma/trash/ShawarmaDB.mv.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shawarma/trash/ShawarmaDB.trace.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shawarma/trash/data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shawarma/trash/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/shawarma/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/shawarma/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/shawarma/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/login.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/evgen/shawarma/IngredientByIdConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/evgen/shawarma/OrderAdminService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/evgen/shawarma/ShawarmaApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/evgen/shawarma/data/IngredientRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/evgen/shawarma/data/JdbcIngredientRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/evgen/shawarma/data/JdbcOrderRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/evgen/shawarma/data/OrderRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/evgen/shawarma/data/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/evgen/shawarma/entities/Ingredient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/evgen/shawarma/entities/Shawarma.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/evgen/shawarma/entities/ShawarmaOrder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/evgen/shawarma/entities/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/evgen/shawarma/security/CustomOAuth2UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/evgen/shawarma/security/RegistrationForm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/evgen/shawarma/security/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/evgen/shawarma/web/AdminController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/evgen/shawarma/web/DesignShawarmaController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/evgen/shawarma/web/HomeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/evgen/shawarma/web/OrderController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/evgen/shawarma/web/OrderRestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/evgen/shawarma/web/RegistrationController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/evgen/shawarma/web/WebConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/shawarmas.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/dbDiagram.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/shawarma.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/design.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/orderForm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/registration.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/evgen/shawarma/OrderRestControllerMockTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/evgen/shawarma/OrderRestControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/evgen/shawarma/ShawarmaApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trash/ShawarmaDB.mv.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trash/ShawarmaDB.trace.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trash/data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trash/schema.sql" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="shawarma" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="shawarma" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="shawarma" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/6.1.13/1f3da84d5c1cc9ea11ba550124bcc9287ee22b22/spring-web-6.1.13-sources.jar!/org/springframework/web/client/RestOperations.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2mjKKWrQFOMzvxL8C1YOS5rlMTq" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.OrderRestControllerGTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.OrderRestControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.shawarma [bootRun].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.shawarma [bootTestRun].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.shawarma [testClasses].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.taco-cloud [:edu.evgen.taco_cloud.TacoCloudApplication.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.taco-cloud [bootRun].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.taco-cloud [bootTestRun].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.taco-cloud [javadoc].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/evgeniyfimushkin/Git/microservices-kafka-docker&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.43908045&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="edu.evgen.shawarma" />
+      <recent name="edu.evgen.shawarma.security" />
+      <recent name="edu.evgen.shawarma.entities" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/resources/static/images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/shawarma" />
+      <recent name="$PROJECT_DIR$/trash" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/build" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="edu.evgen.shawarma" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.shawarma [bootRun]">
+    <configuration name="OrderRestControllerGTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;edu.evgen.shawarma.web.OrderRestControllerGTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="OrderRestControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;edu.evgen.shawarma.OrderRestControllerTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="shawarma [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="env">
+          <map>
+            <entry key="google.clientId" value="68536196978-a4pb24sj06178hvtjsjrqppn24uabls9.apps.googleusercontent.com" />
+            <entry key="google.clientSecret" value="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" />
+          </map>
+        </option>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootRun" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="shawarma [bootTestRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootTestRun" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="shawarma [testClasses]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="testClasses" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.OrderRestControllerGTest" />
+      <item itemvalue="Gradle.OrderRestControllerTest" />
+      <item itemvalue="Gradle.shawarma [bootRun]" />
+      <item itemvalue="Gradle.shawarma [bootTestRun]" />
+      <item itemvalue="Gradle.shawarma [testClasses]" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.shawarma [bootRun]" />
+        <item itemvalue="Gradle.OrderRestControllerGTest" />
+        <item itemvalue="Gradle.shawarma [bootTestRun]" />
+        <item itemvalue="Gradle.OrderRestControllerTest" />
+        <item itemvalue="Gradle.shawarma [testClasses]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="73e159e6-81d7-45b8-80d8-ca229618079e" name="Changes" comment="" />
+      <created>1727584482113</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1727584482113</updated>
+    </task>
+    <task id="LOCAL-00001" summary="test commit">
+      <option name="closed" value="true" />
+      <created>1728696787541</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1728696787541</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Spring JPA added">
+      <option name="closed" value="true" />
+      <created>1728708220277</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1728708220277</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Spring JPA added">
+      <option name="closed" value="true" />
+      <created>1728708235405</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1728708235405</updated>
+    </task>
+    <task id="LOCAL-00004" summary="H2 database added">
+      <option name="closed" value="true" />
+      <created>1728710251916</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1728710251916</updated>
+    </task>
+    <task id="LOCAL-00005" summary="trying to write tests">
+      <option name="closed" value="true" />
+      <created>1728749191462</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1728749191462</updated>
+    </task>
+    <task id="LOCAL-00006" summary="H2 has been replaced by mongodb. it works">
+      <option name="closed" value="true" />
+      <created>1728962270110</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1728962270110</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Registration and authorization with Spring Security added">
+      <option name="closed" value="true" />
+      <created>1729060165365</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1729060165365</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Registration has validated">
+      <option name="closed" value="true" />
+      <created>1729062808455</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1729062808455</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Oauth2 Google authorization has added">
+      <option name="closed" value="true" />
+      <created>1729219473711</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1729219473711</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Oauth2 Google">
+      <option name="closed" value="true" />
+      <created>1729219574489</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1729219574489</updated>
+    </task>
+    <task id="LOCAL-00011" summary="login picture added to README.md">
+      <option name="closed" value="true" />
+      <created>1729220947169</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1729220947169</updated>
+    </task>
+    <task id="LOCAL-00012" summary="login picture added to README.md">
+      <option name="closed" value="true" />
+      <created>1729221034489</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1729221034489</updated>
+    </task>
+    <task id="LOCAL-00013" summary="login picture added to README.md">
+      <option name="closed" value="true" />
+      <created>1729221189098</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1729221189098</updated>
+    </task>
+    <task id="LOCAL-00014" summary="README.md">
+      <option name="closed" value="true" />
+      <created>1729221241012</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1729221241012</updated>
+    </task>
+    <task id="LOCAL-00015" summary="changes">
+      <option name="closed" value="true" />
+      <created>1729224273482</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1729224273482</updated>
+    </task>
+    <task id="LOCAL-00016" summary="styles and html changes">
+      <option name="closed" value="true" />
+      <created>1729225291308</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1729225291308</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test commit" />
+    <MESSAGE value="Spring JPA added" />
+    <MESSAGE value="H2 database added" />
+    <MESSAGE value="trying to write tests" />
+    <MESSAGE value="H2 has been replaced by mongodb. it works" />
+    <MESSAGE value="Registration and authorization with Spring Security added" />
+    <MESSAGE value="Registration has validated" />
+    <MESSAGE value="Oauth2 Google authorization has added" />
+    <MESSAGE value="Oauth2 Google" />
+    <MESSAGE value="login picture added to README.md" />
+    <MESSAGE value="README.md" />
+    <MESSAGE value="changes" />
+    <MESSAGE value="styles and html changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="styles and html changes" />
+  </component>
+</project>

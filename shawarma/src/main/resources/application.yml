@@ -1,0 +1,36 @@
+#logging:
+#  level:
+#    org:
+#      springframework:
+#        web: debug
+
+
+spring:
+  #  main:
+  #    debug: true
+  application:
+    name: shawarma
+  thymeleaf:
+    cache: true
+  jpa:
+    hibernate:
+      ddl-auto: update
+  data:
+    rest:
+      base-path: /data-api
+  datasource:
+    url: jdbc:h2:file:./data/ShawarmaDB
+    driver-class-name: org.h2.Driver
+    generate-unique-name: false
+    name: shawarma
+    username: sa
+    password:
+    initialization-mode: always
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            clientId: ${google.clientId} # create your own Google Cloud Oauth2 clientId
+            clientSecret: ${google.clientSecret} # create your own Google Cloud Oauth2 clientSecret
+            scope: profile, email

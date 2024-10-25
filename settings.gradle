@@ -1,1 +1,3 @@
 rootProject.name = 'shawarma'
+include "shawarma"
+include "shawarmaOAuth2AuthorizationServer"

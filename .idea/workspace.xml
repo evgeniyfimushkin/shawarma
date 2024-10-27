@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73e159e6-81d7-45b8-80d8-ca229618079e" name="Changes" comment="configuring oauth2 server">
-      <change afterPath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/myBPP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="73e159e6-81d7-45b8-80d8-ca229618079e" name="Changes" comment="color Logging fixed">
+      <change afterPath="$PROJECT_DIR$/shawarmaOAuth2AuthorizationServer/OAuth2Commands.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_security_spring_security_oauth2_authorization_server_1_3_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_security_spring_security_oauth2_authorization_server_1_3_3.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shawarma/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/shawarma/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shawarmaOAuth2AuthorizationServer/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/shawarmaOAuth2AuthorizationServer/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shawarmaOAuth2AuthorizationServer/data/OAuth2DB.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/shawarmaOAuth2AuthorizationServer/data/OAuth2DB.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shawarmaOAuth2AuthorizationServer/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shawarmaOAuth2AuthorizationServer/src/main/java/edu/evgen/shawarmaQAuth2AuthorizationServer/config/AuthorizationServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/shawarmaOAuth2AuthorizationServer/src/main/java/edu/evgen/shawarmaQAuth2AuthorizationServer/config/AuthorizationServerConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,17 +151,17 @@
       <recent name="$PROJECT_DIR$/src/main/resources/static/images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/shawarmaOAuth2AuthorizationServer" />
       <recent name="$PROJECT_DIR$/shawarma" />
       <recent name="$PROJECT_DIR$/trash" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/build" />
-      <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="edu.evgen.shawarma" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.shawarma:shawarma [bootRun]">
+  <component name="RunManager" selected="Gradle.shawarma:shawarmaOAuth2AuthorizationServer [bootRun]">
     <configuration name="OrderRestControllerGTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -301,8 +300,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.shawarma:shawarma [bootRun]" />
         <item itemvalue="Gradle.shawarma:shawarmaOAuth2AuthorizationServer [bootRun]" />
+        <item itemvalue="Gradle.shawarma:shawarma [bootRun]" />
         <item itemvalue="Gradle.shawarma [bootTestRun]" />
         <item itemvalue="Gradle.shawarma [bootRun]" />
         <item itemvalue="Gradle.OrderRestControllerGTest" />
@@ -462,7 +461,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729830025070</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="color Logging fixed">
+      <option name="closed" value="true" />
+      <created>1729849740428</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1729849740428</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -492,6 +499,7 @@
     <MESSAGE value="styles and html changes" />
     <MESSAGE value="Project has devided into a shawarma application and OAuth2 Authorization Server application" />
     <MESSAGE value="configuring oauth2 server" />
-    <option name="LAST_COMMIT_MESSAGE" value="configuring oauth2 server" />
+    <MESSAGE value="color Logging fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="color Logging fixed" />
   </component>
 </project>

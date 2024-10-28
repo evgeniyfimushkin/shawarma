@@ -1,13 +1,13 @@
 #logging:
-#  level:
-#    org:
-#      springframework:
-#        web: debug
+#    root: TRACE  # Устанавливает уровень логирования TRACE для всех компонентов
+#    org.springframework.security: TRACE  # Логирование для Spring Security
+#    org.springframework.web: TRACE  # Логирование для Spring Web
+#    org.hibernate: DEBUG  # DEBUG-уровень для Hibernate (подробнее о SQL запросах)
+#    org.springframework.boot.autoconfigure.security: TRACE  # Логирование для автоконфигурации безопасности
+
 
 
 spring:
-  #  main:
-  #    debug: true
   application:
     name: shawarma
   thymeleaf:
@@ -28,6 +28,10 @@ spring:
     initialization-mode: always
   security:
     oauth2:
+      resourceserver:
+        jwt:
+          # URL для получения JWT ключей от авторизационного сервера
+          jwk-set-uri: http://localhost:9000/oauth2/jwks
       client:
         registration:
           google:

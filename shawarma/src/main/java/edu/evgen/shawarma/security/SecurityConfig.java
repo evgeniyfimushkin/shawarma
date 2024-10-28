@@ -4,6 +4,7 @@ import edu.evgen.shawarma.data.UserRepository;
 import edu.evgen.shawarma.entities.User;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.authorization.AuthenticatedAuthorizationManager;
 import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -44,6 +45,7 @@ public class SecurityConfig {
         };
     }
 
+
     @Bean
     public SecurityFilterChain filterChain(
             HttpSecurity http,
@@ -57,12 +59,19 @@ public class SecurityConfig {
                                 .frameOptions(frameOptionsConfig -> frameOptionsConfig.disable())
                 )
                 .authorizeHttpRequests(authorizeHttpRequests ->
-                                authorizeHttpRequests
-                                        .requestMatchers("/admin/**").hasRole("ADMIN")
-                                        .requestMatchers("/h2-console/**").hasRole("USER")
-                                        .requestMatchers("/design", "/order").hasRole("USER")
-//                                .requestMatchers("/design", "/order").rememberMe()
-                                        .requestMatchers("/", "/**").permitAll()
+                        authorizeHttpRequests
+                                .requestMatchers("/admin/**").hasRole("ADMIN")
+                                .requestMatchers("/h2-console/**").hasRole("USER")
+
+
+                                .requestMatchers(HttpMethod.POST, "data-api/ingredients").hasAuthority(
+                                        "SCOPE_writeIngredients")
+                                .requestMatchers(HttpMethod.DELETE, "data-api/ingredients").hasAuthority(
+                                        "SCOPE_deleteIngredients")
+
+                                .requestMatchers("/design", "/order").hasRole("USER")
+
+                                .requestMatchers("/", "/**").permitAll()
                 )
                 .formLogin(formLogin ->
                         formLogin
@@ -85,7 +94,10 @@ public class SecurityConfig {
                         logout
                                 .logoutSuccessUrl("/")
                 )
-                .rememberMe(Customizer.withDefaults());
+                .rememberMe(Customizer.withDefaults())
+                .oauth2ResourceServer(oauth2 -> oauth2
+                        .jwt(Customizer.withDefaults())
+                );
         return http.build();
 
     }

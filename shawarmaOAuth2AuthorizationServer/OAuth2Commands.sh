@@ -3,7 +3,7 @@ http://localhost:9000/oauth2/authorize?response_type=code&client_id=admin&redire
 curl localhost:9000/oauth2/token \
 -H"Content-type: application/x-www-form-urlencoded" \
 -d "grant_type=authorization_code" \
--d"code=mA90V6RXRkPrKY_gpf4S05N-DoQ6OMrk1-SJpHpPaTRBDxfiW-WcISL1oSnuZ2eI5Mt0SJk428bGbOG6rPHgARPYq3gXyMn3QFlf91JiAJGNP6GzAQgsSPNV3i9S0NMn" \
+-d"code=K6327l_gfM6Xo_akqapZ8b-wntWHCVKvJQfHYMJuO4jlbQWpNSYaT_qISev6hA78qfTFyj0iQWpnXUDysbN7BYwQqbl2M0S9FB-mmYK1m7DBVLJCpW5cSouqm26inxo3" \
 -d"redirect_uri=http://127.0.0.1:9090/login/oauth2/code/admin" \
 -u admin:admin
 

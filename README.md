@@ -1,6 +1,6 @@
 # shawarma-project
  Education Java Spring application for ordering shawarma
-## Technologies used
+### Technologies used
 - Spring boot
 - Spring MVC
 - Spring Data JPA

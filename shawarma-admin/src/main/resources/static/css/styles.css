@@ -1,0 +1,188 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #fdf5e6;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #D2691E;
+    font-size: 2.5em;
+}
+
+h3 {
+    color: #ff4500;
+    font-weight: bold;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    border: 5px solid #ffa07a;
+    border-radius: 15px;
+}
+
+.ingredient-group {
+    background-color: #fff8dc;
+    padding: 15px;
+    border: 2px solid #ffa07a;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+button {
+    background-color: #ff4500;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff6347;
+}
+
+.validationError {
+    color: red;
+    font-size: 0.9em;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #ff4500;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 2px solid #ffa07a;
+    border-radius: 5px;
+}
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 2px solid #ffa07a;
+    border-radius: 5px;
+}
+
+a#another {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    background-color: #ffa07a;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+a#another:hover {
+    background-color: #ff4500;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #fff8dc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ffa07a;
+    border-radius: 10px;
+}
+button, input[type="submit"] {
+    background-color: #ff6f61;  /* Приятный красно-оранжевый цвет */
+    color: white;  /* Белый текст */
+    padding: 10px 20px;  /* Просторная кнопка */
+    border: none;  /* Без рамок */
+    border-radius: 5px;  /* Скруглённые углы */
+    cursor: pointer;  /* Курсор в виде руки */
+    font-size: 16px;  /* Увеличенный текст */
+    font-weight: bold; /* Жирный текст */
+    transition: background-color 0.3s ease; /* Плавное изменение цвета */
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #ff5030;  /* Темнее при наведении */
+}
+
+button:active, input[type="submit"]:active {
+    background-color: #d94d3a;  /* Ещё темнее при клике */
+}
+
+
+a#google-login {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    background-color: white;
+    color: #4285F4;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #4285F4;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+a#google-login:hover {
+    background-color: #4285F4;
+    color: white;
+}
+
+a#google-login:before {
+
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+}
+/* Стили для ссылки как кнопки */
+a#register {
+    display: inline-block;  /* Делаем ссылку блочным элементом */
+    margin-top: 15px;  /* Отступ сверху */
+    text-decoration: none;  /* Убираем подчеркивание */
+    background-color: #ff6f61;  /* Красно-оранжевый цвет фона */
+    color: white;  /* Белый текст */
+    padding: 10px 20px;  /* Просторная кнопка */
+    border-radius: 5px;  /* Скруглённые углы */
+    cursor: pointer;  /* Курсор в виде руки */
+    font-size: 16px;  /* Увеличенный текст */
+    font-weight: bold; /* Жирный текст */
+    transition: background-color 0.3s ease; /* Плавное изменение цвета */
+}
+
+/* Анимация при наведении */
+a#register:hover {
+    background-color: #ff5030;  /* Темнее при наведении */
+}
+
+a#register:active {
+    background-color: #d94d3a;  /* Ещё темнее при клике */
+}

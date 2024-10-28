@@ -68,6 +68,10 @@ public class SecurityConfig {
                                         "SCOPE_writeIngredients")
                                 .requestMatchers(HttpMethod.DELETE, "data-api/ingredients").hasAuthority(
                                         "SCOPE_deleteIngredients")
+                                .requestMatchers(HttpMethod.POST, "api/ingredients").hasAuthority(
+                                        "SCOPE_writeIngredients")
+                                .requestMatchers(HttpMethod.DELETE, "api/ingredients").hasAuthority(
+                                        "SCOPE_deleteIngredients")
 
                                 .requestMatchers("/design", "/order").hasRole("USER")
 

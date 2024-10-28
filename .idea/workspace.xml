@@ -4,17 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73e159e6-81d7-45b8-80d8-ca229618079e" name="Changes" comment="Oauth2 Client init">
-      <change afterPath="$PROJECT_DIR$/shawarma-admin/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shawarma/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shawarmaOAuth2AuthorizationServer/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_devtools_3_3_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_oauth2_client_3_3_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_thymeleaf_3_3_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_security_spring_security_oauth2_client_6_3_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_thymeleaf_extras_thymeleaf_extras_springsecurity6_3_1_2_RELEASE.xml" beforeDir="false" />
+    <list default="true" id="73e159e6-81d7-45b8-80d8-ca229618079e" name="Changes" comment="readme updated">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_devtools_3_3_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_oauth2_client_3_3_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_thymeleaf_3_3_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_security_spring_security_oauth2_client_6_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_thymeleaf_extras_thymeleaf_extras_springsecurity6_3_1_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shawarma-admin/src/main/java/edu/evgen/shawarma_admin/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shawarma-admin/src/main/java/edu/evgen/shawarma_admin/controller/ManageIngredientController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shawarma-admin/src/main/java/edu/evgen/shawarma_admin/entity/Ingredient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shawarma-admin/src/main/java/edu/evgen/shawarma_admin/service/IngredientService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shawarma-admin/src/main/java/edu/evgen/shawarma_admin/service/RestIngredientService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shawarma-admin/src/main/resources/static/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shawarma-admin/src/main/resources/static/images/dbDiagram.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shawarma-admin/src/main/resources/static/images/shawarma.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shawarma-admin/src/main/resources/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shawarma-admin/src/main/resources/templates/ingredientsAdmin.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shawarma-admin/src/main/java/edu/evgen/shawarma_admin/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/shawarma-admin/src/main/java/edu/evgen/shawarma_admin/security/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shawarma-admin/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/shawarma-admin/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/security/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shawarmaOAuth2AuthorizationServer/data/OAuth2DB.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/shawarmaOAuth2AuthorizationServer/data/OAuth2DB.mv.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,17 +58,6 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="shawarmas" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="shawarmas" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="shawarmas" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="application" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
@@ -148,35 +147,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Gradle.Download Sources.executor": "Run",
-    "Gradle.OrderRestControllerGTest.executor": "Run",
-    "Gradle.OrderRestControllerTest.executor": "Run",
-    "Gradle.shawarma [bootRun].executor": "Run",
-    "Gradle.shawarma [bootTestRun].executor": "Run",
-    "Gradle.shawarma [runAll].executor": "Run",
-    "Gradle.shawarma [testClasses].executor": "Run",
-    "Gradle.shawarma:shawarma [bootRun].executor": "Run",
-    "Gradle.shawarma:shawarma-admin [bootRun].executor": "Run",
-    "Gradle.shawarma:shawarmaOAuth2AuthorizationServer [bootRun].executor": "Run",
-    "Gradle.taco-cloud [:edu.evgen.taco_cloud.TacoCloudApplication.main()].executor": "Run",
-    "Gradle.taco-cloud [bootRun].executor": "Run",
-    "Gradle.taco-cloud [bootTestRun].executor": "Run",
-    "Gradle.taco-cloud [javadoc].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "deletionFromPopupRequiresConfirmation": "false",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/evgeniyfimushkin/Git/shawarma/shawarmaOAuth2AuthorizationServer",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.43908045",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.OrderRestControllerGTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.OrderRestControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.shawarma [bootRun].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.shawarma [bootTestRun].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.shawarma [runAll].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.shawarma [testClasses].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.shawarma:shawarma [bootRun].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.shawarma:shawarma-admin [bootRun].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.shawarma:shawarmaOAuth2AuthorizationServer [bootRun].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.taco-cloud [:edu.evgen.taco_cloud.TacoCloudApplication.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.taco-cloud [bootRun].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.taco-cloud [bootTestRun].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.taco-cloud [javadoc].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/evgeniyfimushkin/Git/shawarma/shawarma-admin/src/main/resources/static&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.43908045&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="edu.evgen.shawarma" />
@@ -184,11 +183,11 @@
       <recent name="edu.evgen.shawarma.entities" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/shawarma-admin/src/main/resources/static" />
       <recent name="$PROJECT_DIR$/shawarmaOAuth2AuthorizationServer" />
       <recent name="$PROJECT_DIR$/shawarma" />
       <recent name="$PROJECT_DIR$/shawarma-admin" />
       <recent name="$PROJECT_DIR$/shawarmaOAuth2AuthorizationServer/src/main/resources" />
-      <recent name="$PROJECT_DIR$/data" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/shawarma-admin/src/main/java/edu/evgen/shawarma_admin" />
@@ -339,9 +338,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.shawarma:shawarma-admin [bootRun]" />
-        <item itemvalue="Gradle.shawarma [runAll]" />
         <item itemvalue="Gradle.shawarma:shawarmaOAuth2AuthorizationServer [bootRun]" />
         <item itemvalue="Gradle.shawarma:shawarma [bootRun]" />
+        <item itemvalue="Gradle.shawarma [runAll]" />
         <item itemvalue="Gradle.shawarma [bootRun]" />
       </list>
     </recent_temporary>
@@ -531,7 +530,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730098750000</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="readme updated">
+      <option name="closed" value="true" />
+      <created>1730100005977</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1730100005977</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -565,6 +572,7 @@
     <MESSAGE value="Oauth2 authorization-servser is working" />
     <MESSAGE value="Spring data rest is secured by Oauth2" />
     <MESSAGE value="Oauth2 Client init" />
-    <option name="LAST_COMMIT_MESSAGE" value="Oauth2 Client init" />
+    <MESSAGE value="readme updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="readme updated" />
   </component>
 </project>

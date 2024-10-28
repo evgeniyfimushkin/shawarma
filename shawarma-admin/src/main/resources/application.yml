@@ -1,21 +1,21 @@
 server:
   port: 9090
-#
-#spring:
-#  security:
-#    oauth2:
-#      client:
-#        registration:
-#          admin:
-#            provider: shawarma
-#            client-id: "admin"
-#            client-secret: "admin"
-#            authorization-grant-type: authorization_code
-#            redirect-uri: "http://127.0.0.1:9090/login/oauth2/code/{registrationId}"
-#            scope: writeIngredients,deleteIngredients,openid
-#        provider:
-#          shawarma:
-#            authorizationUri: http://localhost:9000/oauth2/authorize
-#            tokenUri: http://localhost:9000/oauth2/token
-#            user-infoUri: http://localhost:9000/userinfo
-#            issuerUri: http://localhost:9000
+
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          admin:
+            provider: shawarma
+            client-id: "admin"
+            client-secret: "admin"
+            authorization-grant-type: authorization_code
+            redirect-uri: "http://127.0.0.1:9090/login/oauth2/code/{registrationId}"
+            scope: writeIngredients,deleteIngredients,openid
+        provider:
+          shawarma:
+            authorizationUri: http://localhost:9000/oauth2/authorize
+            tokenUri: http://localhost:9000/oauth2/token
+            user-infoUri: http://localhost:9000/userinfo
+            issuerUri: http://localhost:9000

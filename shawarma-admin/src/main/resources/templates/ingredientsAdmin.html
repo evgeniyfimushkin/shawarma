@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout.html}">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Шаурма</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+
+<body>
+<h2>Ингредиенты</h2>
+
+<img width="25%" th:src="@{/images/shawarma.png}"/>
+<form method="POST" th:action="@{/admin/ingredients}">
+    ID: <input type="text" name="id"></input><br/>
+    Name: <input type="text" name="name"></input><br/>
+    Type: <input type="type" name="type"></input><br/>
+    <input type="submit" />
+</form>
+
+<hr/>
+
+<ul>
+    <li th:each="ingredient: ${ingredients}" th:text="${ingredient.name}"></li>
+</ul>
+</body>
+</html>

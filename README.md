@@ -4,7 +4,7 @@
 - Spring boot
 - Spring MVC
 - Spring Data JPA
-- Spring Security + OAuth2
+- Spring Security + OAuth2 full
 - Thymeleaf
 ### Using gradlew
 1. Install jdk 21

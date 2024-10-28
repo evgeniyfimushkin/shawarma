@@ -11,3 +11,6 @@ curl localhost:9000/oauth2/token \
 -H "Content-type: application/x-www-form-urlencoded" \
 -d "grant_type=refresh_token&refresh_token=hgc9bJXOwHpke-ASbTzQkUof6ftMJyNIO6pGxD3j8zl0K2wckXRd5xSTPLwALn0ys2gMANAV2LaNR1DXbxmm-D1NkOfAJbG2wHqJQj9wmXfcHscbAWA-RKE_mPJnr8zf" \
 -u admin:admin
+
+
+http://localhost:9000/.well-known/oauth-authorization-server

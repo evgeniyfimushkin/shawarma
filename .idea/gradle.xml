@@ -10,6 +10,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/shawarma" />
+            <option value="$PROJECT_DIR$/shawarma-admin" />
             <option value="$PROJECT_DIR$/shawarmaOAuth2AuthorizationServer" />
           </set>
         </option>

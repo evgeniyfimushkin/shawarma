@@ -1,3 +1,4 @@
 rootProject.name = 'shawarmas'
 include "shawarma"
 include "shawarmaOAuth2AuthorizationServer"
+include "shawarma-admin"

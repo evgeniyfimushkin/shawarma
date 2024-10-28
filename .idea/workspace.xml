@@ -4,29 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73e159e6-81d7-45b8-80d8-ca229618079e" name="Changes" comment="Spring data rest is secured by Oauth2">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_devtools_3_3_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_oauth2_client_3_3_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_thymeleaf_3_3_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_security_spring_security_oauth2_client_6_3_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_thymeleaf_extras_thymeleaf_extras_springsecurity6_3_1_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shawarma-admin/src/main/java/edu/evgen/shawarma_admin/Colors.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shawarma-admin/src/main/java/edu/evgen/shawarma_admin/security/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shawarma-admin/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="73e159e6-81d7-45b8-80d8-ca229618079e" name="Changes" comment="Oauth2 Client init">
+      <change afterPath="$PROJECT_DIR$/shawarma-admin/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shawarma/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shawarmaOAuth2AuthorizationServer/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_devtools_3_3_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_oauth2_client_3_3_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_thymeleaf_3_3_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_security_spring_security_oauth2_client_6_3_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_thymeleaf_extras_thymeleaf_extras_springsecurity6_3_1_2_RELEASE.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shawarma/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/shawarma/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shawarmaOAuth2AuthorizationServer/OAuth2Commands.sh" beforeDir="false" afterPath="$PROJECT_DIR$/shawarmaOAuth2AuthorizationServer/OAuth2Commands.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shawarmaOAuth2AuthorizationServer/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/shawarmaOAuth2AuthorizationServer/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shawarma-admin/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/shawarma-admin/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shawarmaOAuth2AuthorizationServer/data/OAuth2DB.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/shawarmaOAuth2AuthorizationServer/data/OAuth2DB.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shawarmaOAuth2AuthorizationServer/data/OAuth2DB.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/shawarmaOAuth2AuthorizationServer/data/OAuth2DB.trace.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shawarmaOAuth2AuthorizationServer/src/main/java/edu/evgen/shawarmaQAuth2AuthorizationServer/config/AuthorizationServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/shawarmaOAuth2AuthorizationServer/src/main/java/edu/evgen/shawarmaQAuth2AuthorizationServer/config/AuthorizationServerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shawarmaOAuth2AuthorizationServer/src/main/java/edu/evgen/shawarmaQAuth2AuthorizationServer/sercurity/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/shawarmaOAuth2AuthorizationServer/src/main/java/edu/evgen/shawarmaQAuth2AuthorizationServer/sercurity/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shawarmaOAuth2AuthorizationServer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/shawarmaOAuth2AuthorizationServer/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +48,17 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="shawarmas" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="shawarmas" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="shawarmas" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
@@ -170,7 +170,7 @@
     "deletionFromPopupRequiresConfirmation": "false",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/evgeniyfimushkin/Git/shawarma/shawarma-admin",
+    "last_opened_file_path": "/home/evgeniyfimushkin/Git/shawarma/shawarmaOAuth2AuthorizationServer",
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.43908045",
@@ -184,11 +184,11 @@
       <recent name="edu.evgen.shawarma.entities" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/shawarmaOAuth2AuthorizationServer" />
+      <recent name="$PROJECT_DIR$/shawarma" />
       <recent name="$PROJECT_DIR$/shawarma-admin" />
       <recent name="$PROJECT_DIR$/shawarmaOAuth2AuthorizationServer/src/main/resources" />
       <recent name="$PROJECT_DIR$/data" />
-      <recent name="$PROJECT_DIR$/src/main/resources" />
-      <recent name="$PROJECT_DIR$/src/main/resources/static/images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/shawarma-admin/src/main/java/edu/evgen/shawarma_admin" />
@@ -339,9 +339,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.shawarma:shawarma-admin [bootRun]" />
+        <item itemvalue="Gradle.shawarma [runAll]" />
         <item itemvalue="Gradle.shawarma:shawarmaOAuth2AuthorizationServer [bootRun]" />
         <item itemvalue="Gradle.shawarma:shawarma [bootRun]" />
-        <item itemvalue="Gradle.shawarma [runAll]" />
         <item itemvalue="Gradle.shawarma [bootRun]" />
       </list>
     </recent_temporary>
@@ -523,7 +523,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730088988965</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Oauth2 Client init">
+      <option name="closed" value="true" />
+      <created>1730098750000</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1730098750000</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -556,6 +564,7 @@
     <MESSAGE value="color Logging fixed" />
     <MESSAGE value="Oauth2 authorization-servser is working" />
     <MESSAGE value="Spring data rest is secured by Oauth2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring data rest is secured by Oauth2" />
+    <MESSAGE value="Oauth2 Client init" />
+    <option name="LAST_COMMIT_MESSAGE" value="Oauth2 Client init" />
   </component>
 </project>

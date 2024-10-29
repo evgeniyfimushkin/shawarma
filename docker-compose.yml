@@ -1,0 +1,22 @@
+version: '3'
+services:
+  app:
+    build: .
+#    image: shawarma-app
+    container_name: shawarma-app
+    networks:
+      - shawarma-network
+  nginx:
+    image: nginx:latest
+    container_name: shawarma-nginx
+    ports:
+      - 80:80
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - app
+    networks:
+      - shawarma-network
+networks:
+  shawarma-network:
+    driver: bridge

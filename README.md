@@ -14,6 +14,13 @@
 ./gradlew bootRun
 ```
 4. Open http://localhost:8080
+### Using docker compose
+1. Install docker
+2. Execute
+```shell
+docker compose -f docker-compose.yml up -d
+```
+3. Open http://localhost
 
 # Preview
 

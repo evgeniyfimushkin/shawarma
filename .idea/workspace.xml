@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73e159e6-81d7-45b8-80d8-ca229618079e" name="Changes" comment="oauth 2 client finished">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+    <list default="true" id="73e159e6-81d7-45b8-80d8-ca229618079e" name="Changes" comment="Dockerfile added">
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nginx.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,37 +137,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Docker.Dockerfile build.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.OrderRestControllerGTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.OrderRestControllerTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.shawarma [bootRun].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.shawarma [bootTestRun].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.shawarma [runAll].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.shawarma [testClasses].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.shawarma:shawarma [bootJar].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.shawarma:shawarma [bootRun].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.shawarma:shawarma-admin [bootRun].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.shawarma:shawarmaOAuth2AuthorizationServer [bootRun].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.taco-cloud [:edu.evgen.taco_cloud.TacoCloudApplication.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.taco-cloud [bootRun].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.taco-cloud [bootTestRun].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.taco-cloud [javadoc].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/evgeniyfimushkin/Git/shawarma/shawarma-admin/src/main/resources/static&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.43908045&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Docker.Dockerfile build.executor": "Run",
+    "Gradle.Download Sources.executor": "Run",
+    "Gradle.OrderRestControllerGTest.executor": "Run",
+    "Gradle.OrderRestControllerTest.executor": "Run",
+    "Gradle.shawarma [bootRun].executor": "Run",
+    "Gradle.shawarma [bootTestRun].executor": "Run",
+    "Gradle.shawarma [runAll].executor": "Run",
+    "Gradle.shawarma [testClasses].executor": "Run",
+    "Gradle.shawarma:shawarma [bootJar].executor": "Run",
+    "Gradle.shawarma:shawarma [bootRun].executor": "Run",
+    "Gradle.shawarma:shawarma-admin [bootRun].executor": "Run",
+    "Gradle.shawarma:shawarmaOAuth2AuthorizationServer [bootRun].executor": "Run",
+    "Gradle.taco-cloud [:edu.evgen.taco_cloud.TacoCloudApplication.main()].executor": "Run",
+    "Gradle.taco-cloud [bootRun].executor": "Run",
+    "Gradle.taco-cloud [bootTestRun].executor": "Run",
+    "Gradle.taco-cloud [javadoc].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "deletionFromPopupRequiresConfirmation": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/evgeniyfimushkin/Git/shawarma/shawarma-admin/src/main/resources/static",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.43908045",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="edu.evgen.shawarma" />
@@ -190,7 +192,7 @@
       <recent name="edu.evgen.shawarma" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.Dockerfile build">
+  <component name="RunManager" selected="Gradle.shawarma:shawarma-admin [bootRun]">
     <configuration name="shawarma:shawarma [bootJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -517,7 +519,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730100005977</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Dockerfile added">
+      <option name="closed" value="true" />
+      <created>1730164526460</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1730164526460</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -553,6 +563,7 @@
     <MESSAGE value="Oauth2 Client init" />
     <MESSAGE value="readme updated" />
     <MESSAGE value="oauth 2 client finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="oauth 2 client finished" />
+    <MESSAGE value="Dockerfile added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dockerfile added" />
   </component>
 </project>

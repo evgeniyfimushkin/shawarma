@@ -18,7 +18,7 @@
 1. Install docker
 2. Execute
 ```shell
-docker compose -f docker-compose.yml up -d
+docker compose -f docker-compose-files/docker-compose.yml up -d
 ```
 3. Open http://localhost
 

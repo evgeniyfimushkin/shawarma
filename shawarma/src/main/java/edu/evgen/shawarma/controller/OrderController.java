@@ -1,11 +1,11 @@
-package edu.evgen.shawarma.web;
+package edu.evgen.shawarma.controller;
 
 import edu.evgen.shawarma.entities.ShawarmaOrder;
-import edu.evgen.shawarma.data.OrderRepository;
+import edu.evgen.shawarma.repository.OrderRepository;
+import edu.evgen.shawarma.service.JmsOrderMessagingService;
 import jakarta.validation.Valid;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.oauth2.client.authentication.OAuth2AuthenticationToken;
 import org.springframework.security.oauth2.core.user.OAuth2User;
@@ -23,14 +23,10 @@ import java.security.Principal;
 @Controller
 @RequestMapping("/order")
 @SessionAttributes("shawarmaOrder")
+@RequiredArgsConstructor
 public class OrderController {
-    private OrderRepository orderRepo;
-
-    @Autowired
-    public OrderController(OrderRepository orderRepo) {
-        this.orderRepo = orderRepo;
-    }
-
+    private final OrderRepository orderRepo;
+    private final JmsOrderMessagingService messagingService;
 
     @GetMapping("/current")
     public String orderForm() {
@@ -56,6 +52,7 @@ public class OrderController {
 
         // Сохранение заказа
         orderRepo.save(shawarmaOrder);
+        messagingService.sendOrder(shawarmaOrder);
         sessionStatus.setComplete();
 
         return "redirect:/";

@@ -1,4 +1,4 @@
-package edu.evgen.shawarma.web;
+package edu.evgen.shawarma.controller;
 
 import edu.evgen.shawarma.OrderAdminService;
 import org.springframework.stereotype.Controller;

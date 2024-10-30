@@ -1,6 +1,6 @@
-package edu.evgen.shawarma.restcontroller;
+package edu.evgen.shawarma.controller;
 
-import edu.evgen.shawarma.data.IngredientRepository;
+import edu.evgen.shawarma.repository.IngredientRepository;
 import edu.evgen.shawarma.entities.Ingredient;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;

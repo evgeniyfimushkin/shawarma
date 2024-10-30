@@ -1,10 +1,10 @@
-package edu.evgen.shawarma.web;
+package edu.evgen.shawarma.controller;
 
 
 import edu.evgen.shawarma.entities.Ingredient;
 import edu.evgen.shawarma.entities.Shawarma;
 import edu.evgen.shawarma.entities.ShawarmaOrder;
-import edu.evgen.shawarma.data.IngredientRepository;
+import edu.evgen.shawarma.repository.IngredientRepository;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

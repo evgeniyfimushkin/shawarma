@@ -1,6 +1,6 @@
 package edu.evgen.shawarma.security;
 
-import edu.evgen.shawarma.data.UserRepository;
+import edu.evgen.shawarma.repository.UserRepository;
 import edu.evgen.shawarma.entities.User;
 import org.springframework.security.oauth2.client.userinfo.DefaultOAuth2UserService;
 import org.springframework.security.oauth2.client.userinfo.OAuth2UserRequest;

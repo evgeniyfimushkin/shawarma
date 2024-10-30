@@ -1,11 +1,9 @@
-package edu.evgen.shawarma.web;
+package edu.evgen.shawarma.controller;
 
-import edu.evgen.shawarma.data.UserRepository;
+import edu.evgen.shawarma.repository.UserRepository;
 import edu.evgen.shawarma.entities.User;
 import edu.evgen.shawarma.security.RegistrationForm;
 import jakarta.validation.Valid;
-import org.springframework.security.core.annotation.AuthenticationPrincipal;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

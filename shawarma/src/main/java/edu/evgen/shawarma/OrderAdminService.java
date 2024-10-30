@@ -1,6 +1,6 @@
 package edu.evgen.shawarma;
 
-import edu.evgen.shawarma.data.OrderRepository;
+import edu.evgen.shawarma.repository.OrderRepository;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.stereotype.Service;

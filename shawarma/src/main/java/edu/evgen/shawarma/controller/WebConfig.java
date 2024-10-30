@@ -1,4 +1,4 @@
-package edu.evgen.shawarma.web;
+package edu.evgen.shawarma.controller;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;

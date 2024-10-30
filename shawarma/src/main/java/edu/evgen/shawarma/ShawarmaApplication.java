@@ -1,28 +1,19 @@
 package edu.evgen.shawarma;
 
-import edu.evgen.shawarma.data.OrderRepository;
-import edu.evgen.shawarma.data.ShawarmaRepository;
-import edu.evgen.shawarma.data.UserRepository;
+import edu.evgen.shawarma.repository.OrderRepository;
+import edu.evgen.shawarma.repository.ShawarmaRepository;
+import edu.evgen.shawarma.repository.UserRepository;
 import edu.evgen.shawarma.entities.Ingredient;
-import edu.evgen.shawarma.data.IngredientRepository;
-import edu.evgen.shawarma.entities.Shawarma;
+import edu.evgen.shawarma.repository.IngredientRepository;
 import org.springframework.boot.ApplicationRunner;
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Profile;
 import org.springframework.core.ParameterizedTypeReference;
-import org.springframework.http.HttpMethod;
-import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.web.client.RestTemplate;
 
 import java.util.*;
-import java.util.stream.Stream;
-
-import static edu.evgen.shawarma.Colors.GREEN;
-import static edu.evgen.shawarma.Colors.RESET;
 
 @SpringBootApplication
 public class ShawarmaApplication {

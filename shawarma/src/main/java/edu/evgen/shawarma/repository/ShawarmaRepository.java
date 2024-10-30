@@ -1,4 +1,4 @@
-package edu.evgen.shawarma.data;
+package edu.evgen.shawarma.repository;
 
 import edu.evgen.shawarma.entities.Shawarma;
 import org.springframework.data.jpa.repository.JpaRepository;

@@ -4,13 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73e159e6-81d7-45b8-80d8-ca229618079e" name="Changes" comment="docker-compose with nginx were added">
-      <change afterPath="$PROJECT_DIR$/docker-compose files/activemq-compose.yml" afterDir="false" />
+    <list default="true" id="73e159e6-81d7-45b8-80d8-ca229618079e" name="Changes" comment="structure is changed">
+      <change afterPath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/service/JmsOrderMessagingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_jms_6_1_13.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_jms_6_1_13.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/shawarma/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose files/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose files/nginx.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shawarma/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/shawarma/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose files/activemq-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose-files/activemq-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose files/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose-files/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose files/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose-files/nginx.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/OrderAdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/OrderAdminService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/ShawarmaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/ShawarmaApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/data/IngredientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/repository/IngredientRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/data/JdbcIngredientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/repository/JdbcIngredientRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/data/JdbcOrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/repository/JdbcOrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/data/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/repository/OrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/data/ShawarmaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/repository/ShawarmaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/data/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/entities/Ingredient.java" beforeDir="false" afterPath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/entities/Ingredient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/restcontroller/IngredientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/controller/IngredientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/restcontroller/ShawarmaRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/controller/ShawarmaRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/security/CustomOAuth2UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/security/CustomOAuth2UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/web/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/web/DesignShawarmaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/controller/DesignShawarmaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/web/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/web/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/web/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/controller/RegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/web/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/controller/WebConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shawarma/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/shawarma/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -185,11 +205,11 @@
       <recent name="$PROJECT_DIR$/shawarmaOAuth2AuthorizationServer/src/main/resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/shawarma/src/main/java/edu/evgen/shawarma/controller" />
       <recent name="$PROJECT_DIR$/shawarma" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/docker" />
       <recent name="$PROJECT_DIR$/shawarma-admin/src/main/java/edu/evgen/shawarma_admin" />
-      <recent name="$PROJECT_DIR$/shawarmaOAuth2AuthorizationServer" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="edu.evgen.shawarma" />
@@ -538,7 +558,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730190368790</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="structure is changed">
+      <option name="closed" value="true" />
+      <created>1730280862455</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1730280862455</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -576,6 +604,7 @@
     <MESSAGE value="oauth 2 client finished" />
     <MESSAGE value="Dockerfile added" />
     <MESSAGE value="docker-compose with nginx were added" />
-    <option name="LAST_COMMIT_MESSAGE" value="docker-compose with nginx were added" />
+    <MESSAGE value="structure is changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="structure is changed" />
   </component>
 </project>

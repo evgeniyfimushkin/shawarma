@@ -6,6 +6,14 @@
 - Spring Data JPA
 - Spring Security + OAuth2 full
 - Thymeleaf
+### Using docker compose
+1. Install docker
+2. Execute
+```shell
+cd docker
+docker compose -f docker-compose.yml up -d --build
+```
+3. Open http://localhost
 ### Using gradlew
 1. Install jdk 21
 2. Generate your own Google Cloud Oauth2 clientID and clientSecret keys and add them to application.yml for working Google Authorization
@@ -14,16 +22,10 @@
 ./gradlew bootRun
 ```
 4. Open http://localhost:8080
-### Using docker compose
-1. Install docker
-2. Execute
-```shell
-docker compose -f docker-compose-files/docker-compose.yml up -d
-```
-3. Open http://localhost
+
 
 # Preview
 
-![loginPageHere](shawarma/images/login.png)
+![loginPageHere](./images/login.png)
 
 

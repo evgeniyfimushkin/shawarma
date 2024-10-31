@@ -1,0 +1,46 @@
+services:
+  app:
+    build: ../macroservices/shawarma
+#    image: shawarma-app
+    container_name: shawarma-app
+    networks:
+      - shawarma-network
+    depends_on:
+      - activemq
+    restart: always
+
+
+  nginx:
+    image: nginx:latest
+    container_name: shawarma-nginx
+    ports:
+      - 80:80
+    volumes:
+      - ../config/nginx/nginx.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - app
+    networks:
+      - shawarma-network
+    restart: always
+
+
+  activemq:
+    image: rmohr/activemq
+    container_name: shawarma-activemq
+    environment:
+      - ACTIVEMQ_ADMIN_LOGIN=admin
+      - ACTIVEMQ_ADMIN_PASSWORD=admin
+    ulimits:
+      nofile:
+        soft: 1024
+        hard: 1024
+    networks:
+      - shawarma-network
+    restart: always
+
+
+networks:
+  shawarma-network:
+    name: shawarma-network
+    driver: bridge
+

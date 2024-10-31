@@ -1,4 +1,9 @@
-rootProject.name = 'shawarmas'
-include "shawarma"
-include "shawarmaOAuth2AuthorizationServer"
-include "shawarma-admin"
+rootProject.name = 'shawarma'
+
+include 'macroservices:shawarma'
+include 'macroservices:shawarma-admin'
+include 'macroservices:shawarmaOAuth2AuthorizationServer'
+
+project(':macroservices:shawarma').projectDir = file('macroservices/shawarma')
+project(':macroservices:shawarma-admin').projectDir = file('macroservices/shawarma-admin')
+project(':macroservices:shawarmaOAuth2AuthorizationServer').projectDir = file('macroservices/shawarmaOAuth2AuthorizationServer')

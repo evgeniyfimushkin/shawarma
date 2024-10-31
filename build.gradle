@@ -1,4 +1,0 @@
-tasks.register("runAll") {
-    group="application"
-    dependsOn(":shawarma-admin:bootRun",":shawarma:bootRun", ":shawarmaOAuth2AuthorizationServer:bootRun")
-}

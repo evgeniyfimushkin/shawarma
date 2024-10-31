@@ -1,0 +1,47 @@
+#logging:
+#    root: TRACE  # Устанавливает уровень логирования TRACE для всех компонентов
+#    org.springframework.security: TRACE  # Логирование для Spring Security
+#    org.springframework.web: TRACE  # Логирование для Spring Web
+#    org.hibernate: DEBUG  # DEBUG-уровень для Hibernate (подробнее о SQL запросах)
+#    org.springframework.boot.autoconfigure.security: TRACE  # Логирование для автоконфигурации безопасности
+
+
+
+spring:
+  application:
+    name: shawarma
+  thymeleaf:
+    cache: true
+  jpa:
+    hibernate:
+      ddl-auto: update
+  data:
+    rest:
+      base-path: /data-api
+  jms:
+    template:
+      default-destination: shawarmaQueue
+  activemq:
+    broker-url: tcp://localhost:61616
+    user: evgen
+    password: evgen
+  datasource:
+    url: jdbc:h2:file:./data/ShawarmaDB
+    driver-class-name: org.h2.Driver
+    generate-unique-name: false
+    name: shawarma
+    username: sa
+    password:
+    initialization-mode: always
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          # URL для получения JWT ключей от авторизационного сервера
+          jwk-set-uri: http://localhost:9000/oauth2/jwks
+      client:
+        registration:
+          google:
+            clientId: ${google.clientId} # create your own Google Cloud Oauth2 clientId
+            clientSecret: ${google.clientSecret} # create your own Google Cloud Oauth2 clientSecret
+            scope: profile, email

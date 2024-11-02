@@ -1,4 +1,4 @@
-package edu.evgen.shawarma;
+package edu.evgen.shawarma.service;
 
 import edu.evgen.shawarma.repository.OrderRepository;
 import org.springframework.security.access.prepost.PreAuthorize;

@@ -1,6 +1,6 @@
 package edu.evgen.shawarma.controller;
 
-import edu.evgen.shawarma.OrderAdminService;
+import edu.evgen.shawarma.service.OrderAdminService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

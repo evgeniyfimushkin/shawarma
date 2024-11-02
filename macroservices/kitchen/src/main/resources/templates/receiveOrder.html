@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Шаурма</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+    <img width="25%" th:src="@{/images/shawarma.png}"/>
+
+    <h2>Order for <span th:text="${order.deliveryName}"></span></h2>
+    <h3>Доставка:</h3>
+    <div>
+        <span th:text="${order.deliveryStreet}">Адрес доставки</span><br/>
+    </div>
+
+    <h3>Шаурма:</h3>
+    <div th:each="shawarma : ${order.shawarmas}">
+        <b th:text="${shawarma.name}">шаурма</b><br/>
+        <ul>
+            <li th:each="ingredient : ${shawarma.ingredients}">
+                <span th:text="${ingredient.name}">ингредиент</span>
+            </li>
+        </ul>
+    </div>
+
+    <p>Обновите страницу, чтобы отобразить новые заказы.</p>
+</body>
+</html>

@@ -17,17 +17,17 @@ import java.util.List;
 public class Shawarma implements Serializable {
     private long id;
 
-    @JsonIgnore
-    @ToString.Exclude
+//    @JsonIgnore
+//    @ToString.Exclude
     private ShawarmaOrder order;
 
-    @NotNull
-    @Size(min = 2, message = "Имя как минимум из 2-х букв")
+//    @NotNull
+//    @Size(min = 2, message = "Имя как минимум из 2-х букв")
     private String name;
 
     private LocalDateTime createdAt = LocalDateTime.now();
 
-    @Size(min = 1, message = "Необходимо выбрать хотя бы один ингредиент")
+//    @Size(min = 1, message = "Необходимо выбрать хотя бы один ингредиент")
     private List<Ingredient> ingredients = new ArrayList<>();
 
     public void addIngredient(Ingredient ingredient) {

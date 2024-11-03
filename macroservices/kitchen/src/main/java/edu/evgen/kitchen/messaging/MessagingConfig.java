@@ -2,6 +2,7 @@ package edu.evgen.kitchen.messaging;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
+import edu.evgen.kitchen.entities.ShawarmaOrder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jms.support.converter.MappingJackson2MessageConverter;
@@ -15,6 +16,8 @@ public class MessagingConfig {
 
         // Регистрация модуля для работы с Java 8 Date/Time API
         objectMapper.registerModule(new JavaTimeModule());
+
+        messageConverter.setBeanClassLoader(ShawarmaOrder.class.getClassLoader());
 
         messageConverter.setObjectMapper(objectMapper);
         messageConverter.setTypeIdPropertyName("_typeId");

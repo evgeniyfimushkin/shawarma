@@ -3,6 +3,7 @@ package edu.evgen.kitchen.controller;
 import edu.evgen.kitchen.entities.ShawarmaOrder;
 import edu.evgen.kitchen.messaging.OrderReciever;
 import lombok.RequiredArgsConstructor;
+import org.springframework.jms.annotation.JmsListener;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -24,4 +25,5 @@ public class OrderReceiverController {
         }
         return "noOrder";
     }
+
 }

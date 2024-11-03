@@ -23,10 +23,6 @@ public class MessagingConfig {
         messageConverter.setObjectMapper(objectMapper);
         messageConverter.setTypeIdPropertyName("_typeId");
 
-        Map<String, Class<?>> typeIdMappings = new HashMap<String, Class<?>>();
-        typeIdMappings.put("ShawarmaOrder", ShawarmaOrder.class);
-        messageConverter.setTypeIdMappings(typeIdMappings);
-
         return messageConverter;
     }
 }
